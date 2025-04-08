@@ -1,7 +1,7 @@
-from crewai.tools import tool
+from crewai.tools import Tool
 from typing import Dict, Optional
 
-class AdsAnalyticsTool(tool):
+class AdsAnalyticsTool(Tool):
     """Tool to retrieve advertising analytics data."""
     
     name: str = "Ads Analytics"

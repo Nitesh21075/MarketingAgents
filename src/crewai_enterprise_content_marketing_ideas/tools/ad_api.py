@@ -1,7 +1,7 @@
-from crewai.tools import tool
+from crewai.tools import Tool
 from typing import Dict, List, Optional, Union
 
-class BudgetAllocatorTool(tool):
+class BudgetAllocatorTool(Tool):
     """Tool to allocate advertising budget based on performance data."""
     
     name: str = "Budget Allocator"
@@ -26,7 +26,7 @@ class BudgetAllocatorTool(tool):
             return f"Error allocating budget: {str(e)}"
 
 
-class PostSchedulerTool(tool):
+class PostSchedulerTool(Tool):
     """Tool to schedule social media posts."""
     
     name: str = "Post Scheduler"
@@ -50,7 +50,7 @@ class PostSchedulerTool(tool):
             return f"Error scheduling post: {str(e)}"
 
 
-class SocialCommentMonitorTool(tool):
+class SocialCommentMonitorTool(Tool):
     """Tool to monitor and categorize social media comments."""
     
     name: str = "Social Comment Monitor"
