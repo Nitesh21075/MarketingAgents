@@ -19,7 +19,7 @@ from crewai_tools import (
 )
 
 # Set the Gemini API key
-GEMINI_API_KEY = "AIzaSyA8jpS9F9pt2PCfAsDl1PeNpMQdRNtyjQA"
+GEMINI_API_KEY = ""
 os.environ["GEMINI_API_KEY"] = GEMINI_API_KEY
 
 my_llm = LLM(
